@@ -1,0 +1,64 @@
+header {
+    background-color: aqua;
+    width: 100%;
+    height: 100px;
+}
+
+main {
+    display: flex;
+}
+
+#leo {
+    width: 50vw;
+    background-color: #9b9393;
+}
+
+#corte {
+    /* height: 100vh; */
+    width: 50vw;
+    background-color: #ccc;
+}
+
+.main-content {
+    padding: 40px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+#leo .main-content {
+    align-items: end;
+    padding-right: 40px;
+}
+
+.personal-infos {
+    background-color: #fff;
+    width: 500px;
+    height: 350px;
+}
+
+.about-us {
+    background-color: #fff;
+    width: 500px;
+    height: 350px;
+}
+
+.pro {
+    background-color: #fff;
+    width: 500px;
+    height: 350px;
+}
+
+.links {
+    background-color: #fff;
+    width: 500px;
+    height: 350px;
+}
+
+footer {
+    background-color: red;
+    width: 100%;
+    height: 150px;
+}
