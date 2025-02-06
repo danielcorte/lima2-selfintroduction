@@ -4,209 +4,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-}
-
-
-main {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+    scroll-behavior: smooth;
 
 }
 
-.container {
-    display: flex;
-    flex-direction: column; 
-    row-gap: 30px;
-
-    width: 100%;
-    height: fit-content;
-    background-color: rgb(171, 181, 190);
-
-    padding-top: 120px;
-    padding-left: 30px;
-    border-left: 1px solid black;
+:root {
+    --main-color: rgb(43, 43, 56);
+    --secd-color: rgb(35, 35, 37); 
+    --thir-color: rgb(58, 58, 110);
+    --four-color: rgb(162, 180, 196); 
 }
 
-.info-iniciais {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    width: 70%;
-    height: 100px;
-    background-color: #ccc;
-
-    
-}
-
-.info-iniciais a  {
-    color: #000;
-    font-size: 2em;
-    letter-spacing: 30px;
-    transition: 0.2s ease-in-out;
-}
-
-.info-iniciais a:hover {
-    font-size: 2.2em;
-    color: rgb(52, 99, 52);
-}
-
-.sobre-mim {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    align-items: center;
-    justify-content: space-around;
-
-    width: 70%;
-    height: fit-content;
-    background-color: #ccc;
-}
-
-.sobre-mim h2 {
-    padding-top: 20px;
-}
-
-.sobre-mim p {
-    width: 50%;
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-.imagens {
-    display: flex;
-    column-gap: 29px;
-    padding-bottom: 20px;
-}
-
-.sobre-mim img {
-    width: 230px;
-    transition: 0.3s;
-}
-
-.sobre-mim img:hover {
-    transform: scale(1.03);
-}
-
-.projetos {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    align-items: center;
-    justify-content: space-around;
-
-    width: 70%;
-    height: 600px;
-    background-color: #ccc;
-}
-
-.projetos h2 {
-    padding-top: 20px;
-}
-
-.projetos p {
-    width: 80%;
-}
-
-/*
-CARD
-*/
-
-.projects-container {
-    padding-top: 30px;
-    display: flex;
-    column-gap: 20px;
-}
-
-.project-card {
-    border-radius: 2rem;
-    overflow: hidden; 
-    max-width: 250px;
-    width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    margin: 0 auto;
-    position: relative; 
-}
-
-.project-card:hover {
-    transform: scale(1.05); /* Efeito ao passar o mouse */
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-    width: 100%;
-    height: 250px; /* Altura fixa para uniformidade */
-    object-fit: cover; /* Ajusta a imagem ao tamanho */
-    transition: transform 0.3s ease; /* Efeito para suavidade */
-}
-
-.image-container {
-    position: relative;
-    overflow: hidden; /* Garante que nada ultrapasse o limite do contêiner */
-    height: 300px; /* Altura para conter a imagem */
-}
-
-.project-info {
-    position: absolute;
-    /* right: 1%; */
-    bottom: 0;
-    width: 100%;
-    background: rgb(171, 181, 190);
-    color: #fff;
-    text-align: center;
-    padding: 0.8rem 1.5rem 1.5rem 1.5rem;
-    transform: translateY(78%); /* Inicialmente fora de vista */
-    transition: transform 0.3s ease;
-    z-index: 1;
-}
-
-.project-card:hover .project-title {
-    transform: translateY(0); /* Exibe o título */
-}
-
-.project-card:hover .project-info {
-    transform: translateY(0); /* Revela as informações */
-}
-
-.project-info h4 {
-    position: relative;
-    right: 23px;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.project-info p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-}
-
-.technologies {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.5rem; /* Tamanho dos ícones */
-}
-
-.technologies i {
-    position: relative;
-    right: 20px;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.technologies i:hover {
-    transform: scale(1.2); /* Efeito ao passar o mouse */
-    color: #fff; /* Cor ao passar o mouse */
-}
-
-/*
-FIM CARD
-*/
 
 .navBar{
     display: flex;
@@ -214,46 +22,85 @@ FIM CARD
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: rgb(171, 181, 190);
+    background-color: var(--main-color);
     box-shadow: 0px 4px 6px #0000001a;
 }
 
 .navBar #danTitulo a{
-    color: #03045e;
+    color: var(--four-color);
     text-decoration: none;
+
+    transition: 0.5s ease-in;
+}
+
+.navBar #danTitulo a:hover {
+    text-decoration: underline;
+    color: var(--thir-color);
+    transform: scale(1.01);
 }
 
 .navBar #leoTitulo a{
-    color: #004d98;
+    color: var(--four-color);
     text-decoration: none;
+
+    transition: 0.5s ease-in;
 }
 
-.fotoPerfilDan {
-    position: absolute;
-    bottom: -20%; 
-    left: 15%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    width: 25%; 
-    height: 85%;
-    border: 5px solid white; 
+.navBar #leoTitulo a:hover {
+    text-decoration: underline;
+    color: var(--thir-color);
+    transform: scale(1.01);
 }
 
-.header {
-    position: relative;
-    width: 100%;
-}
-
-.headerMain {
-    width: 100%;
-    height: 500px;
-    display: block;
-}
-
-.heading-favoritos {
+main {
+    background-color: var(--secd-color);
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
 }
 
+h1 {
+    color: var(--four-color);
+    font-size: 2.3em;
+    padding-bottom: 40px;
+}
 
+h3 {
+    color: var(--four-color);
+    font-size: 1.3em;
+    padding-top: 40px;
+}
+
+img {
+    width: 400px;
+
+    transition: 0.3s ease-in;
+}
+
+img:hover {
+    transform: scale(1.04);
+}
+
+footer {
+    background-color: var(--secd-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 1.3em;
+
+    color: #fff;
+    padding-top: 40px;
+}
+
+.main-content-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--main-color);
+    width: 100%;
+    height: 60px;
+}
