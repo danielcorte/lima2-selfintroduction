@@ -1,0 +1,214 @@
+.navBarLeo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px #0000001a;
+}
+
+.navBarLeo #danTitulo a{
+    color: #03045e;
+    text-decoration: none;
+}
+
+.navBarLeo #leoTitulo a{
+    color: #004d98;
+    text-decoration: none;
+}
+
+.fotoPerfilLeo {
+    position: absolute;
+    bottom: -20%; 
+    left: 85%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 25%; 
+    height: 85%;
+    border: 5px solid white; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.containerLeo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+
+    padding-top: 120px;
+    padding-left: 30px;
+    border-left: 1px solid black;
+}
+
+.info-iniciaisLeo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 70%;
+    height: 100px;
+    background-color: #dee2e6;
+}
+
+.info-iniciaisLeo a  {
+    color: #000;
+    font-size: 2em;
+    letter-spacing: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.info-iniciaisLeo a:hover {
+    font-size: 2.2em;
+    color: rgb(52, 99, 52);
+}
+
+.sobre-mimLeo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 70%;
+    height: fit-content;
+    background-color: #dee2e6;
+}
+
+.sobre-mimLeo h2 {
+    padding-top: 20px;
+}
+
+.sobre-mimLeo p {
+    width: 50%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.sobre-mimLeo img {
+    width: 230px;
+    transition: 0.3s;
+}
+
+.sobre-mimLeo img:hover {
+    transform: scale(1.03);
+}
+
+.projetosLeo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 70%;
+    height: 600px;
+    background-color: #dee2e6;
+}
+
+.projetosLeo h2 {
+    padding-top: 20px;
+}
+
+.projetosLeo p {
+    width: 80%;
+}
+
+.projects-containerLeo {
+    padding-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.project-cardLeo {
+    border-radius: 2rem;
+    overflow: hidden; 
+    max-width: 250px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.project-cardLeo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-imageLeo {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.image-containerLeo {
+    position: relative;
+    overflow: hidden; 
+    height: 300px; 
+}
+
+.imagensLeo {
+    display: flex;
+    column-gap: 29px;
+    padding-bottom: 20px;
+}
+
+.project-infoLeo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #adb5bd;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 1.5rem 1.5rem 1.5rem;
+    transform: translateY(78%);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.project-cardLeo:hover .project-titleLeo {
+    transform: translateY(0); 
+}
+
+.project-cardLeo:hover .project-infoLeo {
+    transform: translateY(0); 
+}
+
+.project-infoLeo h4 {
+    position: relative;
+    right: 23px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-infoLeo p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.technologiesLeo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem; 
+}
+
+.technologiesLeo i {
+    position: relative;
+    right: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.technologiesLeo i:hover {
+    transform: scale(1.2); 
+    color: #fff; 
+}
